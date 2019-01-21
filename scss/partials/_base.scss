@@ -1,0 +1,35 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: $ff-josefin;
+
+
+}
+
+@media(min-width: 998px) {
+
+body {
+  background: #D18D7B;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  background: $white;
+}
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+figure {
+margin: 0;
+padding: 0;
+}
