@@ -1149,6 +1149,7 @@ footer {
   width: 70%;
   margin: 0 auto;
   margin-bottom: 1em;
+  padding-top: 1em;
 }
 
 .footer-nav1 {
@@ -1185,7 +1186,13 @@ footer {
 
 .footer-text {
   color: #FFFFFF;
-  line-height: 1.4;
+  font-size: 1rem;
+}
+
+@media (min-width: 998px) {
+  .footer-text {
+    line-height: 1.4;
+  }
 }
 
 .made {
@@ -1230,4 +1237,205 @@ footer {
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
+}
+
+.about-us {
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 3em;
+}
+
+.about-title {
+  margin: 1em 0;
+  font-family: "Shadows Into Light", cursive;
+  display: inline-block;
+  text-align: center;
+}
+
+.about-title::after {
+  content: '';
+  background: black;
+  width: 90%;
+  height: 2px;
+  display: block;
+  margin: .3em auto;
+  -webkit-transform: skew(20deg);
+  -ms-transform: skew(20deg);
+  transform: skew(20deg);
+}
+
+@media (min-width: 998px) {
+  .about-title {
+    margin: 1.5em 0;
+  }
+}
+
+.about-text {
+  text-align: justify;
+  line-height: 1.6;
+}
+
+.catering {
+  height: 60vh;
+  background: #A9A9A9;
+  background-image: url(../img/catering.jpg);
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+.cta {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(auto, 1fr) minmax(auto, 2fr) minmax(auto, 1fr);
+  grid-template-columns: minmax(auto, 1fr) minmax(auto, 2fr) minmax(auto, 1fr);
+}
+
+@media (min-width: 998px) {
+  .cta {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+.cta-title {
+  padding-top: 1em;
+  padding-bottom: 2em;
+  font-family: "Shadows Into Light", cursive;
+  color: #FFFFFF;
+  font-size: 2em;
+  display: inline-block;
+  margin: 0;
+  text-align: center;
+}
+
+.cta-title::after {
+  content: '';
+  background: #FFFFFF;
+  width: 100%;
+  height: 2px;
+  display: block;
+  margin: 0 auto;
+  -webkit-transform: skew(20deg);
+  -ms-transform: skew(20deg);
+  transform: skew(20deg);
+}
+
+.info {
+  display: inline-block;
+  margin-top: 2em;
+}
+
+.coctail {
+  max-width: 600px;
+  max-height: 500px;
+}
+
+.left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  text-align: right;
+  font-size: 1rem;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-family: "Shadows Into Light", cursive;
+}
+
+@media (min-width: 998px) {
+  .left {
+    font-size: 1.5rem;
+  }
+}
+
+.left a {
+  text-decoration: none;
+  color: #FFFFFF;
+  position: relative;
+}
+
+.left a::before {
+  content: '';
+  background: #FFFFFF;
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  margin-right: .3em;
+  border-radius: 50%;
+  border: 2px solid #BC3C18;
+}
+
+.left a:hover::before {
+  background: gray;
+}
+
+.right {
+  text-align: left;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-transform: uppercase;
+  font-family: "Shadows Into Light", cursive;
+}
+
+@media (min-width: 998px) {
+  .right {
+    font-size: 1.5rem;
+  }
+}
+
+.right a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.right a::before {
+  content: '';
+  background: #FFFFFF;
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  margin-right: .3em;
+  border-radius: 50%;
+  border: 2px solid #BC3C18;
+}
+
+.right a:hover::before {
+  background: gray;
+}
+
+.beverage {
+  margin-bottom: auto;
+  margin-top: 0;
+}
+
+.food {
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  display: inline-block;
+  margin-top: auto;
+}
+
+.event {
+  margin-bottom: auto;
+  margin-top: 0;
+  display: inline-block;
+}
+
+.corporate {
+  margin-top: auto;
+  margin-bottom: 0;
+  display: inline-block;
 }
