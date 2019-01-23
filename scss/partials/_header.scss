@@ -1,11 +1,14 @@
 .crown {
   background: #F15025;
-  height: 18vh;
+  height: 16vh;
   position: fixed;
   left: 0;
   right: 0;
   z-index: 100;
 
+@include mq($width: 400px) {
+    height: 12vh;
+  }
 }
 
 .main-nav {
@@ -86,9 +89,7 @@ justify-content: center;
 
 
 
-  .crown {
-    height: 10vh;
-  }
+
 
   .crown i {
     font-size: 2.2rem;
@@ -158,4 +159,19 @@ justify-content: center;
 
 
 
+}
+
+.up-arrow {
+  position: fixed;
+  bottom: 2.5em;
+  right: 1em;
+  z-index: 200;
+  @include mqmax($max-width: 976px) {
+    display: none;
+  }
+
+  i {
+    font-size: 2rem;
+    color: $dark-orange;
+  }
 }

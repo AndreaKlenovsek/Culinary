@@ -4,6 +4,13 @@
 }
 }
 
+
+@mixin mqmax ($max-width: 976px) {
+@media (max-width: $max-width) {
+@content;
+}
+}
+
 @mixin container2 ($width: 90%) {
   width: $width;
   margin: 0 auto;

@@ -47,7 +47,7 @@ footer {
 .footer-text {
   color: $white;
   font-size: 1rem;
-
+  text-align: center;
   @include mq {
     line-height: 1.4;
   }

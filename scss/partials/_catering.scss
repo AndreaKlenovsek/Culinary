@@ -1,10 +1,14 @@
 .catering {
-  height: 60vh;
+  height: 50vh;
   background: #A9A9A9;
-  background-image: url(../img/catering2.jpg);
+  background-image: url(../img/catering.jpg);
   background-position: center;
   background-size: cover;
   background-blend-mode: multiply;
+
+  @include mq($width: 1236px) {
+    height: 60vh;
+  }
 
 }
 
@@ -19,15 +23,18 @@
 }
 
 .cta-title {
-  padding-top: 1em;
-  padding-bottom: 2em;
+  padding: 1em 1.5em 2em;
   font-family: $ff-shadows;
   color: $white;
-  font-size: 2em;
+  font-size: 1.5rem;
   display: inline-block;
 
   margin: 0;
   text-align: center;
+  @include mq {
+    padding: 1em 1.5em 2em;
+    font-size: 2rem;
+  }
 
   &::after {
     content: '';
@@ -41,18 +48,9 @@
   }
 
 
-
-}
-
-.info {
-display: inline-block;
-margin-top: 2em;
-@include mq {
-
 }
 
 
-}
 
 .coctail {
   max-width: 600px;

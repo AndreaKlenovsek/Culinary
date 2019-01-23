@@ -377,11 +377,17 @@ figure {
 
 .crown {
   background: #F15025;
-  height: 18vh;
+  height: 16vh;
   position: fixed;
   left: 0;
   right: 0;
   z-index: 100;
+}
+
+@media (min-width: 400px) {
+  .crown {
+    height: 12vh;
+  }
 }
 
 .main-nav {
@@ -454,9 +460,6 @@ figure {
 }
 
 @media (min-width: 998px) {
-  .crown {
-    height: 10vh;
-  }
   .crown i {
     font-size: 2.2rem;
   }
@@ -524,6 +527,24 @@ figure {
   }
 }
 
+.up-arrow {
+  position: fixed;
+  bottom: 2.5em;
+  right: 1em;
+  z-index: 200;
+}
+
+@media (max-width: 976px) {
+  .up-arrow {
+    display: none;
+  }
+}
+
+.up-arrow i {
+  font-size: 2rem;
+  color: #BC3C18;
+}
+
 .background {
   background: -webkit-gradient(linear, right top, left top, from(#F15025), to(#FFFFFF));
   background: -webkit-linear-gradient(right, #F15025, #FFFFFF);
@@ -567,6 +588,7 @@ figure {
   -ms-transform: rotate(-5deg);
   transform: rotate(-5deg);
   letter-spacing: 5px;
+  display: inline-block;
 }
 
 .culinary {
@@ -580,8 +602,7 @@ figure {
   height: 2px;
   width: 70%;
   background: #F15025;
-  margin-top: .2em;
-  margin-left: 1em;
+  margin: .3em auto;
 }
 
 .subtitle {
@@ -822,8 +843,7 @@ figure {
     color: white;
   }
   .main-title::after {
-    width: 50%;
-    margin-left: 4em;
+    width: 100%;
   }
   .culinary {
     font-size: 4rem;
@@ -835,7 +855,7 @@ figure {
     padding: 1em 3em;
   }
   .cont {
-    width: 45%;
+    max-width: 60%;
     margin: .2em auto;
   }
   .cont-title {
@@ -997,7 +1017,7 @@ figure {
 }
 
 .portfolio-main {
-  margin: 1.5em 0;
+  margin-top: 4em;
   font-family: "Shadows Into Light", cursive;
   display: inline-block;
 }
@@ -1014,7 +1034,7 @@ figure {
   transform: skew(20deg);
 }
 
-@media (min-width: 998px) {
+@media (min-width: 375px) {
   .portfolio-main {
     margin: 1.5em 0;
   }
@@ -1188,6 +1208,7 @@ footer {
 .footer-text {
   color: #FFFFFF;
   font-size: 1rem;
+  text-align: center;
 }
 
 @media (min-width: 998px) {
@@ -1277,12 +1298,18 @@ footer {
 }
 
 .catering {
-  height: 60vh;
+  height: 50vh;
   background: #A9A9A9;
-  background-image: url(../img/catering2.jpg);
+  background-image: url(../img/catering.jpg);
   background-position: center;
   background-size: cover;
   background-blend-mode: multiply;
+}
+
+@media (min-width: 1236px) {
+  .catering {
+    height: 60vh;
+  }
 }
 
 .cta {
@@ -1300,14 +1327,20 @@ footer {
 }
 
 .cta-title {
-  padding-top: 1em;
-  padding-bottom: 2em;
+  padding: 1em 1.5em 2em;
   font-family: "Shadows Into Light", cursive;
   color: #FFFFFF;
-  font-size: 2em;
+  font-size: 1.5rem;
   display: inline-block;
   margin: 0;
   text-align: center;
+}
+
+@media (min-width: 998px) {
+  .cta-title {
+    padding: 1em 1.5em 2em;
+    font-size: 2rem;
+  }
 }
 
 .cta-title::after {
@@ -1320,11 +1353,6 @@ footer {
   -webkit-transform: skew(20deg);
   -ms-transform: skew(20deg);
   transform: skew(20deg);
-}
-
-.info {
-  display: inline-block;
-  margin-top: 2em;
 }
 
 .coctail {
