@@ -655,7 +655,7 @@ figure {
 .hero-subscribe {
   display: block;
   background: #64A6BD;
-  background-image: url(../img/form.jpg);
+  background-image: url(../img/signin.jpg);
   background-position: center;
   background-size: cover;
   background-blend-mode: overlay;
@@ -853,7 +853,7 @@ figure {
   .hero-subscribe {
     display: block;
     background: #90A8C3;
-    background-image: url(../img/form.jpg);
+    background-image: url(../img/signin.jpg);
     background-position: center;
     background-size: cover;
     background-blend-mode: overlay;
@@ -1040,6 +1040,7 @@ figure {
   -o-object-fit: cover;
   object-fit: cover;
   min-height: 100%;
+  min-width: 100%;
 }
 
 .portfolio-item figcaption {
@@ -1278,7 +1279,7 @@ footer {
 .catering {
   height: 60vh;
   background: #A9A9A9;
-  background-image: url(../img/catering.jpg);
+  background-image: url(../img/catering2.jpg);
   background-position: center;
   background-size: cover;
   background-blend-mode: multiply;
